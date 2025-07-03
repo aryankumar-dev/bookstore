@@ -8,24 +8,24 @@ A simple REST API for a Bookstore with:
 ✅ Middleware for logging, auth & error handling
 ✅ Bonus: Genre search, Pagination
 
-
 🚀 Setup
 
-git clone https://github.com/aryankumar-dev/bookstore.git
-cd bookstore
-npm install
+git clone https://github.com/aryankumar-dev/bookstore.git  
+cd bookstore  
+npm install  
 Create a .env file:
 
-PORT=3000
-SECRET_KEY=your_secret_here
+PORT=3000  
+SECRET_KEY=your_secret_here  
 Start the server:
 
-npm run dev   # Dev mode with nodemon
-npm start     # Production mode
+npm run dev   # Dev mode with nodemon  
+npm start     # Production mode  
 🔐 Authentication
 
 Register (Create Account)
 Endpoint: POST /auth/register
+
 JSON Body Example:
 
 {
@@ -34,6 +34,7 @@ JSON Body Example:
 }
 Login
 Endpoint: POST /auth/login
+
 JSON Body Example:
 
 {
@@ -42,7 +43,7 @@ JSON Body Example:
 }
 ✅ On successful login, a token is set in an HTTP-only cookie.
 
-Protected: All /books routes require login.
+All /books routes require login.
 
 📖 Book Routes
 
@@ -60,5 +61,4 @@ Example JSON to Add Book:
   "author": "F. Scott Fitzgerald",
   "genre": "Classic",
   "publishedYear": 1925
-
 }
