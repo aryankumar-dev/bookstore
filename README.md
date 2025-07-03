@@ -88,6 +88,19 @@ Example:
 
 GET http://localhost:3000/books
 
+
+JSON TO ADD BOOK 
+
+{
+  "title": "Th Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "genre": "Classic",
+  "publishedYear": 1925
+}
+
+
+
+
 🧑‍🔬 Run Tests
 
 npm test
@@ -106,3 +119,4 @@ Do NOT push your .env file to GitHub — .gitignore already handles this.
 ✅ Test cases with Jest & Supertest
 
 ✅ Ready to deploy or demonstrate!
+
