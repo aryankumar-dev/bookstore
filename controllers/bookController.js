@@ -5,8 +5,22 @@ const BOOKS_FILE = './data/books.json';
 
 export const getAllBooks = async (req, res) => {
   const books = await readJSON(BOOKS_FILE);
-  res.json(books);
+
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
+  const start = (page - 1) * limit;
+  const end = start + limit;
+
+  const paginatedBooks = books.slice(start, end);
+
+  res.json({
+    total: books.length,
+    page,
+    limit,
+    books: paginatedBooks,
+  });
 };
+
 
 export const addBook = async (req, res) => {
   const { title, author, genre, publishedYear } = req.body;
@@ -65,3 +79,19 @@ export const getBookById = async (req, res) => {
   res.json(book);
 };
 
+
+export const searchBooksByGenre = async (req, res) => {
+
+  const { genre } = req.query;
+  const books = await readJSON(BOOKS_FILE);
+
+  if (!genre) {
+    return res.status(400).json({ message: 'Genre query parameter is required' });
+  }
+
+  const filteredBooks = books.filter((book) =>
+    book.genre.toLowerCase() === genre.toLowerCase()
+  );
+
+  res.json(filteredBooks);
+};
