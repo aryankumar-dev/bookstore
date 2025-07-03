@@ -37,7 +37,7 @@ npm start     # Production mode
 ## 🔐 Authentication
 
 ### Register (Create Account)  
-**Endpoint:** `POST /auth/register`  
+**Endpoint:** `POST /register`  
 
 **JSON Body Example:**  
 ```json
@@ -48,7 +48,7 @@ npm start     # Production mode
 ```
 
 ### Login  
-**Endpoint:** `POST /auth/login`  
+**Endpoint:** `POST /login`  
 
 **JSON Body Example:**  
 ```json
