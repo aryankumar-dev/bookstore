@@ -1,0 +1,26 @@
+[
+  {
+    "id": "0da121d5-021f-4efa-b361-ad78f999ef6f",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Classic",
+    "publishedYear": 1925,
+    "userId": "d799d32c-b0cc-439f-afca-22fc20341f7b"
+  },
+  {
+    "id": "fb994039-0bf7-498c-96c8-251e88285b4b",
+    "title": "Th Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Classic",
+    "publishedYear": 1925,
+    "userId": "d799d32c-b0cc-439f-afca-22fc20341f7b"
+  },
+  {
+    "id": "12baab16-5375-4fcf-a303-be45751592ea",
+    "title": "Th Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Classic",
+    "publishedYear": 1925,
+    "userId": "d799d32c-b0cc-439f-afca-22fc20341f7b"
+  }
+]
