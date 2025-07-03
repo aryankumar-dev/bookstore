@@ -7,7 +7,7 @@ A simple REST API for a Bookstore with:
 ✅ JSON file persistence (no database needed)
 ✅ Middleware for logging, auth & error handling
 ✅ Bonus: Genre search, Pagination
-✅ Tested with Jest & Supertest
+
 
 🚀 Setup
 
@@ -60,4 +60,5 @@ Example JSON to Add Book:
   "author": "F. Scott Fitzgerald",
   "genre": "Classic",
   "publishedYear": 1925
+
 }
